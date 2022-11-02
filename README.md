@@ -1,5 +1,4 @@
 # Tequila_Mockingbird
-Project 2 API call using React
 
 # Description
 
