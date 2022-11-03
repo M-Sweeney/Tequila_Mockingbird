@@ -6,32 +6,12 @@ import axios from 'axios'
 
 
 function App() {
-    //create state for data
-    const [drinks, setDrinks] = useState([])
-    const [selectedDrink, setSelectedDrink] = useState(null)
-  
-    //call axios function
-  useEffect(()=>{
-    const getData = async () =>{
-    const response = await axios.get('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
-    console.log(response.data.drinks)
-    // set state of our data
-    setDrinks(response.data.drinks)
-  
-    }
-  
-    getData()
-
-  }, [])
-
-
-
 
   return (
     <div>
       <h1>Hello world</h1>
       <div className='header'>
-        <Header drinks={drinks}/>
+        <Header />
       </div>
       <div className='main'>
         <Main/>
