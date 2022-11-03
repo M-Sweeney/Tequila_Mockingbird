@@ -21,7 +21,7 @@ This project uses an API call from (https://www.thecocktaildb.com/api.php), Reac
 
 # Getting Started
 
-When you start the website you will see a navigation bar at the top where you can return to home, browse drinks, ingredients, and drink types, or search for a specific drink. From there you will see a few different drink/ingredient cards shown which you can click through to see further details and instructions. 
+When you start the website you will see a navigation bar at the top where you can return to home, browse drinks, ingredients, and drink types, or search for a specific drink. From there you will see a few different drink/ingredient cards shown which you can click through to see further details and instructions on how to make the drink. 
 
 # Contribution Guidelines
 
