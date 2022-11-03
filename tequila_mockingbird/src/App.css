@@ -43,3 +43,20 @@
 .card:hover{
   transform: scale(1.05);
 }
+
+.detailsCard{
+  display: flex;
+  justify-content: row;
+}
+
+.detailsImg{
+  max-width: 300;
+}
+
+.detailText{
+  padding-left: 5em;
+}
+
+.cardTitle{
+  font-size: 3em;
+}
