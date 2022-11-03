@@ -1,7 +1,13 @@
+import { Link } from 'react-router-dom'
+
 export default function Nav () {
   return(
     <div>
-      <h2>Nav</h2>
+      <Link to ='/'>Home</Link>
+      <Link to ='/drinks'>Browse Drinks</Link>
+      <Link to ='/ingredients'>Browse Ingredients</Link>
+      <Link to ='/mocktails'>Mocktails</Link>
+      <Link to ='/'>Search</Link>
     </div>
   )
 }

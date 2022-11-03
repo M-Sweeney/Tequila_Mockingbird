@@ -1,7 +1,9 @@
+import Nav from "./Nav"
+
 export default function Header () {
   return(
     <div>
-      <h2>header</h2>
+      <h2>Tequila Mockingbird</h2>
       <Nav/>
     </div>
   )
