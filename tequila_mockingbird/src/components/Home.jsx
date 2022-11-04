@@ -20,7 +20,7 @@ useEffect(()=>{
 }, [])
 
   //see the data
-console.log(drinks)
+// console.log(drinks)
 
 
   // make a guard operator 

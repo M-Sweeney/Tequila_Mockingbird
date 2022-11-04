@@ -1,11 +1,11 @@
 import Nav from "./Nav"
 
 
-export default function Header (props) {
+export default function Header () {
   return(
     <div>
       <h2>Tequila Mockingbird</h2>
-      <Nav drinks={props.drinks}/>
+      <Nav />
     </div>
   )
 }

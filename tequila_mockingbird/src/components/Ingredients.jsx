@@ -36,7 +36,7 @@ if(!ingredients) {
     <div className='grid'>
       {
       ingredients.map((drink)=>(
-      <div key={drink.ingredients}
+      <div key={drink.strIngredient1}
       className='card'>
       <div className="previewText">
       <h2>{drink.strIngredient1}</h2>
