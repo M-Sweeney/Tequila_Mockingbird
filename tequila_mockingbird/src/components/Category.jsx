@@ -4,8 +4,8 @@
 //pull in the drink clicked from categories and render data
 
 import { useState, useEffect } from "react"
+import { useParams } from "react-router-dom"
 import axios from 'axios'
-
 
 export default function Categories () {
 
@@ -32,7 +32,7 @@ if(!drink) {
   return(
     <div className='container'>
     <div className="title">
-      <h1>`${id}`</h1>
+      <h1>{id}</h1>
     </div>
     <div className='grid'>
       {

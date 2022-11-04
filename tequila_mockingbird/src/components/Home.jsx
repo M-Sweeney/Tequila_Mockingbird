@@ -40,6 +40,7 @@ if(!drinks) {
       <h3>{drinks[0].strCategory}</h3>
       <h3>{drinks[0].strGlass}</h3>
       <ul>
+      <h3>Ingredients:</h3>
       <h3>{drinks[0].strIngredient1} {drinks[0].strMeasure1}</h3>
       <h3>{drinks[0].strIngredient2} {drinks[0].strMeasure2}</h3>
       <h3>{drinks[0].strIngredient3} {drinks[0].strMeasure3}</h3>

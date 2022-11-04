@@ -3,7 +3,7 @@ import Home from './Home'
 import Drinks from './Drinks'
 import Ingredients from './Ingredients'
 import Mocktails from './Mocktails'
-import Category from "./Categories"
+import Category from "./Category"
 import Categories from "./Categories"
 
 export default function Main () {
