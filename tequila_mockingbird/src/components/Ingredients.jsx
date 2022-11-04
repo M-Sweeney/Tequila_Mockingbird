@@ -3,15 +3,12 @@ import axios from 'axios'
 
 export default function Ingredients () {
 
-  //create state for data
   const [ingredients, setIngredients] = useState(null)
 
-  //call axios function
 useEffect(()=>{
   const getData = async () =>{
   const response = await axios.get('https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list')
-  // console.log(response.data.ingredients)
-  // set state of our data
+
   setIngredients(response.data.drinks)
 
   }
@@ -20,11 +17,7 @@ useEffect(()=>{
 
 }, [])
 
-  //see the data
-// console.log(ingredients)
 
-
-  // make a guard operator 
 if(!ingredients) {
   return <h2>Loading Ingredients</h2>
 }else{

@@ -1,22 +1,23 @@
+
+// use params
+//api call for base url and autofill the remainder with the drink clicked on the previous page
+//pull in the drink clicked from categories and render data
+
 import { useState, useEffect } from "react"
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
 
 
-export default function Category () {
+export default function Categories () {
 
+  let { id } = useParams()
 
+  const [drink, setdrink] = useState(null)
 
-  //create state for data
-  const [category, setCategory] = useState(null)
-
-  //call axios function
 useEffect(()=>{
   const getData = async () =>{
-  const response = await axios.get('https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list')
-  // console.log(response.data.Category)
-  // set state of our data
-  setCategory(response.data.drinks)
+  const response = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${id}`)
+  console.log(response.data.drinks)
+  setdrink(response.data.drinks)
 
   }
 
@@ -24,26 +25,25 @@ useEffect(()=>{
 
 }, [])
 
-  //see the data
-// console.log(Category)
 
-
-  // make a guard operator 
-if(!category) {
-  return <h2>Loading Categories...</h2>
+if(!drink) {
+  return <h2>Loading drink...</h2>
 }else{
   return(
     <div className='container'>
     <div className="title">
-      <h1>Categories!</h1>
+      <h1>`${id}`</h1>
     </div>
     <div className='grid'>
       {
-      category.map((drink)=>(
-      <div key={drink.strCategory}
+      drink.map((drink)=>(
+      <div key={drink.strDrink}
       className='card'>
+      <img className="preview" src={`${drink.strDrinkThumb}/preview`}  />
       <div className="previewText">
-      <h2>{drink.strCategory}</h2>
+      <h2>{drink.strDrink}</h2>
+      <h3>{drink.strAlcoholic}</h3>
+      <h3>{drink.strdrink}</h3>
       </div>
       </div>
       ))}

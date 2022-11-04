@@ -1,17 +1,16 @@
 import { useState, useEffect } from "react"
-import { useNavigate } from "react-router-dom"
 import axios from 'axios'
 
-export default function Drinks () {
+export default function Ingredients () {
 
-
-  const [drinks, setDrinks] = useState(null)
+  const [ingredients, setIngredients] = useState(null)
 
 useEffect(()=>{
   const getData = async () =>{
-  const response = await axios.get('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+  const response = await axios.get('https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list')
 
-  setDrinks(response.data.drinks)
+  setIngredients(response.data.drinks)
+
   }
 
   getData()
@@ -19,8 +18,8 @@ useEffect(()=>{
 }, [])
 
 
-if(!drinks) {
-  return <h2>Loading Featured Drink</h2>
+if(!ingredients) {
+  return <h2>Loading Ingredients</h2>
 }else{
   return(
     <div className='container'>

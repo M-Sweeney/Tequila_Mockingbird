@@ -3,15 +3,12 @@ import axios from 'axios'
 
 export default function Mocktails () {
 
-  //create state for data
   const [mocktails, setMocktails] = useState(null)
 
-  //call axios function
 useEffect(()=>{
   const getData = async () =>{
   const response = await axios.get('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic')
-  // console.log(response.data.Mocktails)
-  // set state of our data
+
   setMocktails(response.data.drinks)
 
   }
@@ -20,11 +17,7 @@ useEffect(()=>{
 
 }, [])
 
-  //see the data
-// console.log(Mocktails)
 
-
-  // make a guard operator 
 if(!mocktails) {
   return <h2>Loading Mocktails</h2>
 }else{
