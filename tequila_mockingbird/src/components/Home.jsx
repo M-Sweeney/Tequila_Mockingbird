@@ -4,7 +4,7 @@ import axios from 'axios'
 export default function Drinks () {
 
   //create state for data
-  const [drinks, setDrinks] = useState([])
+  const [drinks, setDrinks] = useState(null)
 
   //call axios function
 useEffect(()=>{
@@ -39,9 +39,13 @@ if(!drinks) {
       className='detailsCard'>
       <img className="detailsImg" src={`${drinks[0].strDrinkThumb}`}  />
       <div className="detailText">
-      <h2 className="cardTitle">{drinks[0].strDrink}</h2>
+      <h2 className="cardTitle">
+        {drinks[0].strDrink}</h2>
       <h3>{drinks[0].strAlcoholic}</h3>
       <h3>{drinks[0].strCategory}</h3>
+      <h3>{drinks[0].strGlass}</h3>
+      <h3>{drinks[0].strIngredient1} {drinks[0].strMeasure1}</h3>
+      <h3>{drinks[0].strInstructions}</h3>
       </div>
       </div>
       }

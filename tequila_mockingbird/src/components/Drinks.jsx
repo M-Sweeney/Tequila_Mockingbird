@@ -4,7 +4,7 @@ import axios from 'axios'
 export default function Drinks () {
 
   //create state for data
-  const [drinks, setDrinks] = useState([])
+  const [drinks, setDrinks] = useState(null)
 
   //call axios function
 useEffect(()=>{
