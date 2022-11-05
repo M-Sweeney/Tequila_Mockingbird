@@ -7,7 +7,7 @@ export default function Nav (props) {
       <Link to ='/category' >Browse By Category</Link>
       <Link to ='/ingredients'>Browse By Ingredients</Link>
       <Link to ='/mocktails'>Mocktails</Link>
-      <Link to ='/'>Search</Link>
+      {/* <Link to ='/'>Search</Link> */}
     </div>
   )
 }

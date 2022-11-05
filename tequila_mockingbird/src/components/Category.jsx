@@ -5,11 +5,19 @@
 
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import axios from 'axios'
 
 export default function Categories () {
 
   let { id } = useParams()
+
+  let navigate = useNavigate()
+
+  const showDrink = (drink) => {
+
+    navigate(`/drinks/${drink.strDrink}`)
+  }
 
   const [drink, setdrink] = useState(null)
 
@@ -37,7 +45,7 @@ if(!drink) {
     <div className='grid'>
       {
       drink.map((drink)=>(
-      <div key={drink.strDrink}
+      <div onClick={() => showDrink(drink)} key={drink.strDrink}
       className='card'>
       <img className="preview" src={`${drink.strDrinkThumb}/preview`}  />
       <div className="previewText">

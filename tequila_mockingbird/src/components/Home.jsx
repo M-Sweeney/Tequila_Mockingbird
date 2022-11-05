@@ -36,10 +36,10 @@ if(!drinks) {
       <h1 className="cardTitle">
         {drinks.strDrink}</h1>
       <h3>{drinks.strAlcoholic}</h3>
-      <h3>{drinks.strCategory}</h3>
-      <h3>{drinks.strGlass}</h3>
+      <h3>Category: {drinks.strCategory}</h3>
+      <h3>Glass Type: {drinks.strGlass}</h3>
       <ul>
-      <h3>Ingredients:</h3>
+      <h3>Ingredient List:</h3>
       <h3>{drinks.strIngredient1} {drinks.strMeasure1}</h3>
       <h3>{drinks.strIngredient2} {drinks.strMeasure2}</h3>
       <h3>{drinks.strIngredient3} {drinks.strMeasure3}</h3>
@@ -56,7 +56,7 @@ if(!drinks) {
       <h3>{drinks.strIngredient14} {drinks.strMeasure14}</h3>
       <h3>{drinks.strIngredient15} {drinks.strMeasure15}</h3>
       </ul>
-      <h3>{drinks.strInstructions}</h3>
+      <h3>Instructions: {drinks.strInstructions}</h3>
       </div>
       </div>
       }
