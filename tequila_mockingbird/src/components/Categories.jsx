@@ -8,9 +8,6 @@ export default function Categories () {
 
   const showDrink = (drink) => {
 
-    console.log(drink)
-    console.log(drink.strCategory)
-
     navigate(`${drink.strCategory}`)
   }
 

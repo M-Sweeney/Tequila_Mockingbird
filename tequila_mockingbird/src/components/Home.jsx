@@ -34,8 +34,8 @@ if(!drinks) {
       className='detailsCard'>
       <img className="detailsImg" src={`${drinks[0].strDrinkThumb}`}  />
       <div className="detailText">
-      <h2 className="cardTitle">
-        {drinks[0].strDrink}</h2>
+      <h1 className="cardTitle">
+        {drinks[0].strDrink}</h1>
       <h3>{drinks[0].strAlcoholic}</h3>
       <h3>{drinks[0].strCategory}</h3>
       <h3>{drinks[0].strGlass}</h3>

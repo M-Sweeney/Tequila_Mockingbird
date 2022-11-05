@@ -1,8 +1,15 @@
 import { useState, useEffect } from "react"
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 export default function Ingredients () {
 
+  let navigate = useNavigate()
+
+  const showIngredient = (drink) => {
+
+    navigate(`${drink.strIngredient1}`)
+  }
   const [ingredients, setIngredients] = useState(null)
 
 useEffect(()=>{
@@ -29,7 +36,7 @@ if(!ingredients) {
     <div className='grid'>
       {
       ingredients.map((drink)=>(
-      <div key={drink.strIngredient1}
+      <div onClick={() => showIngredient(drink)} key={drink.strIngredient1}
       className='card'>
       <div className="previewText">
       <h2>{drink.strIngredient1}</h2>

@@ -5,6 +5,7 @@ import Ingredients from './Ingredients'
 import Mocktails from './Mocktails'
 import Category from "./Category"
 import Categories from "./Categories"
+import Ingredient from "./Ingredient"
 
 export default function Main () {
   return(
@@ -14,6 +15,7 @@ export default function Main () {
         <Route path ="/category" element={<Categories/>}/>
         <Route path ="/category/:id" element={<Category/>}/>
         <Route path ="/ingredients" element={<Ingredients/>}/>
+        <Route path ="/ingredients/:id" element={<Ingredient/>}/>
         <Route path ="/mocktails" element={<Mocktails/>}/>
         <Route path ="/drinks" element={<Drinks/>}/>
       </Routes>
