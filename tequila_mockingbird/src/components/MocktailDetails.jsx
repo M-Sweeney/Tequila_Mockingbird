@@ -62,6 +62,8 @@ if(!drink) {
       <h3>{drink.strIngredient14} {drink.strMeasure14}</h3>
       <h3>{drink.strIngredient15} {drink.strMeasure15}</h3>
       </ul>
+      <h3>{drink.strInstructions}</h3>
+
     </div>
     </div>
     </div>
