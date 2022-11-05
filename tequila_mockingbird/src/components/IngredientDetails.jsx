@@ -16,7 +16,7 @@ export default function Ingredient () {
 useEffect(()=>{
   const getData = async () =>{
   const response = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?i=${id}`)
-  console.log(response.data.ingredients)
+  // console.log(response.data.ingredients)
   setdrink(response.data.ingredients)
 
   }
@@ -36,7 +36,6 @@ if(!drink) {
     </div>
     <div className='grid'>
       {
-      // drink.map((drink)=>(
       <div key={drink.strIngredient}
       className='detailText'>
       <div className="previewText">

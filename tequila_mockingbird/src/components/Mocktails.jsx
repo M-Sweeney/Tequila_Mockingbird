@@ -1,9 +1,17 @@
 import { useState, useEffect } from "react"
+import { useNavigate } from "react-router-dom"
 import axios from 'axios'
 
 export default function Mocktails () {
 
+  let navigate = useNavigate()
+
+  const showDrink = (drink) => {
+
+    navigate(`${drink.idDrink}`)
+  }
   const [mocktails, setMocktails] = useState(null)
+  
 
 useEffect(()=>{
   const getData = async () =>{
@@ -29,7 +37,7 @@ if(!mocktails) {
     <div className='grid'>
       {
       mocktails.map((drink)=>(
-      <div key={drink.strDrink}
+      <div onClick={() => showDrink(drink)} key={drink.strDrink}
       className='card'>
       <img className="preview" src={`${drink.strDrinkThumb}/preview`}  />
       <div className="previewText">
