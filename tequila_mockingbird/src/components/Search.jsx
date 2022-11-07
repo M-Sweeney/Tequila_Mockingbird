@@ -21,12 +21,12 @@ function Search() {
   const handleChange = (event) => {
     setFormState({ ...formState, [event.target.id]: event.target.value })
   };
-
-  const useEffect = async () => {
+  
+  const getSearch = async () => {
     const response = await axios.get(
-      `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${formState}`
+      `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${formState[""]}`
     );
-    console.log(response.data)
+    console.log(response)
     console.log(formState)
 
     setSearch(response.data.drinks)
@@ -42,15 +42,14 @@ function Search() {
           onChange={handleChange}
         />
         <button
-          
             type="button"
-            onClick={useEffect}
+            onClick={getSearch}
             id="searchButton"
             value="Click here"
           >Search
         </button>
       </form>
-      <div className="searchResults">
+      <div className="grid">
         {search?.map((drinks) => (
           <div key={drinks.strDrink} className="card">
             <h3>{drinks.strDrink} </h3>
@@ -62,3 +61,5 @@ function Search() {
 }
 
 export default Search
+
+
