@@ -46,12 +46,11 @@ if(!drink) {
       {
       drink.map((drink)=>(
       <div onClick={() => showDrink(drink)} key={drink.strDrink}
-      className='cardNoDetails'>
+      className='card'>
       <img className="preview" src={`${drink.strDrinkThumb}/preview`}  />
       <div className="previewText">
       <h2>{drink.strDrink}</h2>
-      <h3>{drink.strAlcoholic}</h3>
-      <h3>{drink.strdrink}</h3>
+      <h2>{drink.strAlcoholic}</h2>
       </div>
       </div>
       ))}

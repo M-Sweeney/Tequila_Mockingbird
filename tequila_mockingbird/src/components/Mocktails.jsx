@@ -38,7 +38,7 @@ if(!mocktails) {
       {
       mocktails.map((drink)=>(
       <div onClick={() => showDrink(drink)} key={drink.strDrink}
-      className='cardNoDetails'>
+      className='card'>
       <img className="preview" src={`${drink.strDrinkThumb}/preview`}  />
       <div className="previewText">
       <h2>{drink.strDrink}</h2>

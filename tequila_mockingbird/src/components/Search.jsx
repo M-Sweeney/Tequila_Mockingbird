@@ -52,7 +52,11 @@ function Search() {
       <div className="grid">
         {search?.map((drinks) => (
           <div key={drinks.strDrink} className="card">
-            <h3>{drinks.strDrink} </h3>
+            <img className="preview" src={`${drinks.strDrinkThumb}/preview`}  />
+            <div className="previewText">
+              <h2>{drinks.strDrink}</h2>
+              <h3>{drinks.strAlcoholic}</h3>
+            </div>
           </div>
         ))}
       </div>
