@@ -28,6 +28,53 @@
   color: white;
   font-family: 'Georgia';
   cursor: pointer;
+  transition: .5s;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.cardNoDetails{
+  padding: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 17em;
+  height: 18em;
+  background-color: rgb(36, 47, 85);
+  border-radius: 0.5em;
+  margin: 1em;
+  justify-content: space-around;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.527);
+  color: white;
+  font-family: 'Georgia';
+  cursor: pointer;
+  transition: .5s;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.cardNoImg{
+  padding: 1em;
+  width: 17em;
+  height: 3em;
+  background-color: rgb(36, 47, 85);
+  border-radius: 0.5em;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.527);
+  color: white;
+  font-family: 'Georgia';
+  cursor: pointer;
+  transition: .5s;
+}
+
+.cardNoImg:hover{
+  transform: scale(1.05);
 }
 
 .preview{
@@ -38,10 +85,6 @@
 
 .previewText{
   text-align: center;
-}
-
-.card:hover{
-  transform: scale(1.05);
 }
 
 .detailsCard{

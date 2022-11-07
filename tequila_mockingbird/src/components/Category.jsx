@@ -35,18 +35,18 @@ useEffect(()=>{
 
 
 if(!drink) {
-  return <h2>Loading drink...</h2>
+  return <h2>Loading category...</h2>
 }else{
   return(
     <div className='container'>
     <div className="title">
-      <h1>{id}</h1>
+      <h1>{id}s</h1>
     </div>
     <div className='grid'>
       {
       drink.map((drink)=>(
       <div onClick={() => showDrink(drink)} key={drink.strDrink}
-      className='card'>
+      className='cardNoDetails'>
       <img className="preview" src={`${drink.strDrinkThumb}/preview`}  />
       <div className="previewText">
       <h2>{drink.strDrink}</h2>

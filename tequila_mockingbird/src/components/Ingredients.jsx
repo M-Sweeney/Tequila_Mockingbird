@@ -37,7 +37,7 @@ if(!ingredients) {
       {
       ingredients.map((drink)=>(
       <div onClick={() => showIngredient(drink)} key={drink.strIngredient1}
-      className='card'>
+      className='cardNoImg'>
       <div className="previewText">
       <h2>{drink.strIngredient1}</h2>
       </div>

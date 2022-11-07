@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import Home from './Home'
-import Drinks from './Drinks'
+import Search from './Search'
 import DrinkDetails from './DrinkDetails'
 import Ingredients from './Ingredients'
 import IngredientDetails from "./IngredientDetails"
@@ -14,7 +14,7 @@ export default function Main () {
     <div>
       <Routes>
         <Route path ="/" element={<Home/>}/>
-        <Route path ="/drinks" element={<Drinks/>}/>
+        <Route path ="/searchresults" element={<Search/>}/>
         <Route path ="/drinks/:id" element={<DrinkDetails/>}/>
         <Route path ="/ingredients" element={<Ingredients/>}/>
         <Route path ="/ingredients/:id" element={<IngredientDetails/>}/>

@@ -15,8 +15,7 @@ export default function Mocktail () {
 
 useEffect(()=>{
   const getData = async () =>{
-  const response = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=
-  ${id}`)
+  const response = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`)
   // console.log(response.data.drinks[0])
   setdrink(response.data.drinks[0])
 

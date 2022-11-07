@@ -38,7 +38,7 @@ if(!category) {
       {
       category.map((drink)=>(
       <div onClick={() => showDrink(drink)} key={drink.strCategory}
-      className='card'>
+      className='cardNoImg'>
       <div className="previewText">
       <h2>{drink.strCategory}</h2>
       </div>
