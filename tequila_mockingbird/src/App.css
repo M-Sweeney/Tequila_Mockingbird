@@ -32,7 +32,8 @@ Header{
   display: flex;
   justify-content: space-evenly;
   background-color: #BBC240;
-  padding: .5em;
+  padding: .25em;
+  margin-top: -4px;
 }
 
 .nav a{
