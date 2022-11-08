@@ -7,13 +7,17 @@ import axios from 'axios'
 
 function App() {
 
+
+  const [search, setSearch] = useState(null)
+
+
   return (
     <div>
       <div className='header'>
-        <Header />
+        <Header search={search} setSearch={setSearch}/>
       </div>
       <div className='main'>
-        <Main/>
+        <Main search={search} setSearch={setSearch}/>
       </div>
     </div>
   );

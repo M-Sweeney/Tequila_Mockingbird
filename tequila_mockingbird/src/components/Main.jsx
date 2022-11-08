@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import Home from './Home'
-import Search from './Search'
+import SearchResults from './SearchResults'
 import DrinkDetails from './DrinkDetails'
 import Ingredients from './Ingredients'
 import IngredientDetails from "./IngredientDetails"
@@ -9,12 +9,18 @@ import MocktailDetails from './MocktailDetails'
 import Categories from "./Categories"
 import Category from "./Category"
 
-export default function Main () {
+
+
+
+export default function Main ({search, setSearch}) {
+
+
+
   return(
     <div>
       <Routes>
-        <Route path ="/" element={<Home/>}/>
-        <Route path ="/searchresults" element={<Search/>}/>
+        <Route path ="/" element={<Home />}/>
+        <Route path ="/searchresults" element={<SearchResults search={search} setSearch={setSearch}/>}/>
         <Route path ="/drinks/:id" element={<DrinkDetails/>}/>
         <Route path ="/ingredients" element={<Ingredients/>}/>
         <Route path ="/ingredients/:id" element={<IngredientDetails/>}/>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import axios from 'axios'
 
-export default function Drinks () {
+export default function Drinks ({searchResults}) {
 
 
   const [drinks, setDrinks] = useState(null)
@@ -17,6 +17,7 @@ useEffect(()=>{
 
 }, [])
 
+if(!searchResults){
 
 if(!drinks) {
   return <h2>Loading Featured Drink</h2>
@@ -63,6 +64,6 @@ if(!drinks) {
     </div>
     </div>
   )
-}}
+}}}
 
 

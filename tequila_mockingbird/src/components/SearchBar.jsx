@@ -1,21 +1,25 @@
 //make a form with an input
 // make a handlechange to submit the input and make an api call using the input value
-
 //make an api call to www.thecocktaildb.com/api/json/v1/1/search.php?s=_________
 //map through results
 //display drink cards that match 
 //make it possible to click through the drink cards to show the drink details 
 
-import { useEffect, useState } from "react"
+import { useState } from "react"
+import { useNavigate } from 'react-router-dom'
 import axios from "axios"
 
-function Search() {
+function Search({search, setSearch}) {
+
+  let navigate = useNavigate()
+
 
   const [formState, setFormState] = useState("")
-  const [search, setSearch] = useState(null)
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault()
+    getSearch()
+    navigate(`/searchresults`)
   };
 
   const handleChange = (event) => {
@@ -26,30 +30,26 @@ function Search() {
     const response = await axios.get(
       `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${formState[""]}`
     );
-    console.log(response)
-    console.log(formState)
-
     setSearch(response.data.drinks)
   };
 
+
   return (
     <div className="Search">
-      <form id="input" onSubmit={handleSubmit}>
+      <form id="input" >
         <input
           type="text"
           placeholder="Search by drink name"
-          value={formState.subject}
           onChange={handleChange}
         />
         <button
             type="button"
-            onClick={getSearch}
+            onClick={handleSubmit}
             id="searchButton"
-            value="Click here"
           >Search
         </button>
       </form>
-      <div className="grid">
+      {/* <div className="grid">
         {search?.map((drinks) => (
           <div key={drinks.strDrink} className="card">
             <img className="preview" src={`${drinks.strDrinkThumb}/preview`}  />
@@ -59,7 +59,7 @@ function Search() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

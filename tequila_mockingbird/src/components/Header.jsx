@@ -1,11 +1,13 @@
 import Nav from "./Nav"
 
 
-export default function Header () {
+export default function Header ({search, setSearch}) {
+
+
   return(
     <div>
       <h1>Tequila Mockingbird</h1>
-      <Nav />
+      <Nav search={search} setSearch={setSearch}/>
     </div>
   )
 }

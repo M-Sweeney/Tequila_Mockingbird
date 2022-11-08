@@ -1,8 +1,3 @@
-
-// use params
-//api call for base url and autofill the remainder with the drink clicked on the previous page
-//pull in the drink clicked from categories and render data
-
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
