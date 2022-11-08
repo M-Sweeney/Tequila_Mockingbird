@@ -35,12 +35,11 @@ if(!drink) {
     <div className="title">
       <h1>{drink.strDrink}</h1>
     </div>
-
+    <div className="padding">
     <div className='drinkDetails'>
       <div key={drink.strDrink}
       className='detailsCard'>
       <img className="detailsImg" src={`${drink.strDrinkThumb}`}  />
-      <div className="detailText">
       <div className="detailText">
       <h3>{drink.strAlcoholic}</h3>
       <h3>Glass Type: {drink.strGlass}</h3>
@@ -63,7 +62,6 @@ if(!drink) {
       <h3>{drink.strIngredient15} {drink.strMeasure15}</h3>
       </ul>
       <h3>Instructions: {drink.strInstructions}</h3>
-
     </div>
     </div>
     </div>

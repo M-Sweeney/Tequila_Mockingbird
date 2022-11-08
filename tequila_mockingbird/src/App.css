@@ -1,3 +1,12 @@
+body {
+  text-align: center;
+  background-color: #E3A22A;
+}
+
+.main{
+  margin: 0 auto;
+}
+
 .banner{
   width: 100%;
   margin: 0;
@@ -5,19 +14,10 @@
 
 .headerTitle{
   font-size: 45px;
-  background-color: cadetblue;
+  background-color: #BE635E;
   padding: .5em;
   margin-top: -3px;
   margin-bottom: -1px;
-}
-
-.nav{
-  font-size: 20px;
-  display: flex;
-  justify-content: space-evenly;
-  background-color: blueviolet;
-  padding: .5em;
-  text-decoration: none;
 }
 
 Header{
@@ -26,11 +26,26 @@ Header{
   column-gap: 10px;
 }
 
-.title{
+.nav{
+  font-size: 20px;
+  font-weight: 700;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  background-color: #BBC240;
+  padding: .5em;
 }
 
+.nav a{
+  text-decoration: none;
+}
+
+.nav a:hover{
+  text-decoration: underline;
+}
+
+.title{
+  font-size: 20px;
+}
 
 .grid{
   display: flex;
@@ -44,12 +59,11 @@ Header{
   padding-bottom: 2em;
   width: 17em;
   height: 18em;
-  background-color: rgb(36, 47, 85);
+  background-color: #FEDC98;
   border-radius: 0.5em;
   margin: 1em;
   justify-content: space-around;
   box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.527);
-  color: white;
   font-family: 'Georgia';
   cursor: pointer;
   transition: .5s;
@@ -63,14 +77,13 @@ Header{
   padding: 1em;
   width: 17em;
   height: 3em;
-  background-color: rgb(36, 47, 85);
+  background-color: #FEDC98;
   border-radius: 0.5em;
   margin: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.527);
-  color: white;
   font-family: 'Georgia';
   cursor: pointer;
   transition: .5s;
@@ -86,25 +99,35 @@ Header{
   margin-right: auto;
 }
 
-
 .previewText{
   text-align: center;
 }
 
 .detailsCard{
   display: flex;
-  justify-content: row;
   max-width: 75%;
   align-items: center;
-  margin-right: 10em;
   padding: 1em;
   border: solid;
-
+  border-radius: 2%;
+  margin: 0 auto;
+  background-color: #FEDC98;
+  gap: 2em;
+  min-width: fit-content;
+  max-width: 75%;
 }
 
-.main{
+.container{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.padding{
+  padding: 1em;
+  padding-bottom: 3em;
 }
 
 .detailsImg{
@@ -112,14 +135,11 @@ Header{
   border-radius: 5%;
 }
 
-.detailText{
-  padding-left: 5em;
-}
-
 .cardTitle{
   font-size: 3em;
 }
 
-body {
-  text-align: center;
+.ingredientText{
+  padding-left: 1em;
+  padding-right: 1em
 }

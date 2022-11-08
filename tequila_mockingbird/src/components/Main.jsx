@@ -17,7 +17,7 @@ export default function Main ({search, setSearch}) {
 
 
   return(
-    <div>
+    <div className="main">
       <Routes>
         <Route path ="/" element={<Home />}/>
         <Route path ="/searchresults" element={<SearchResults search={search} setSearch={setSearch}/>}/>

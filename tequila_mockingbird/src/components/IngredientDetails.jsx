@@ -34,16 +34,14 @@ if(!drink) {
     <div className="title">
       <h1>{id}</h1>
     </div>
-    <div className='grid'>
-      {
+    <div className="padding">
+      <div className="detailsCard">
       <div key={drink.strIngredient}
-      className='detailText'>
-      <div className="previewText">
+      className='ingredientText'>
       <h3>{drink[0].strDescription}</h3>
       <h3>{drink[0].strABV}</h3>
       </div>
-      </div>
-      }
+    </div>
     </div>
     </div>
   )

@@ -27,8 +27,7 @@ if(!drinks) {
     <div className="title">
       <h1>Featured Drink!</h1>
     </div>
-
-    <div className='drinkDetails'>
+    <div className="padding">
       <div key={drinks.strDrink}
       className='detailsCard'>
       <img className="detailsImg" src={`${drinks.strDrinkThumb}`}  />
@@ -59,7 +58,7 @@ if(!drinks) {
       <h3 className="heading">Instructions: {drinks.strInstructions}</h3>
       </div>
       </div>
-    </div>
+      </div>
     </div>
   )
 }}

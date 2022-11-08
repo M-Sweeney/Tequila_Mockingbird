@@ -34,7 +34,7 @@ if(!drink) {
     <div className="title">
       <h1>{drink.strDrink}</h1>
     </div>
-
+    <div className="padding">
     <div className='drinkDetails'>
       <div key={drink.strDrink}
       className='detailsCard'>
@@ -63,6 +63,7 @@ if(!drink) {
       </ul>
       <h3>Instructions: {drink.strInstructions}</h3>
 
+    </div>
     </div>
     </div>
     </div>
