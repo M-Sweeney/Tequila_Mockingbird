@@ -49,17 +49,6 @@ function Search({search, setSearch}) {
           >Search
         </button>
       </form>
-      {/* <div className="grid">
-        {search?.map((drinks) => (
-          <div key={drinks.strDrink} className="card">
-            <img className="preview" src={`${drinks.strDrinkThumb}/preview`}  />
-            <div className="previewText">
-              <h2>{drinks.strDrink}</h2>
-              <h3>{drinks.strAlcoholic}</h3>
-            </div>
-          </div>
-        ))}
-      </div> */}
     </div>
   );
 }

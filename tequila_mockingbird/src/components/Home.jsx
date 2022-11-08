@@ -17,19 +17,18 @@ useEffect(()=>{
 
 }, [])
 
-if(!searchResults){
 
 if(!drinks) {
   return <h2>Loading Featured Drink</h2>
 }else{
   return(
     <div className='container'>
+
     <div className="title">
       <h1>Featured Drink!</h1>
     </div>
 
     <div className='drinkDetails'>
-      {
       <div key={drinks.strDrink}
       className='detailsCard'>
       <img className="detailsImg" src={`${drinks.strDrinkThumb}`}  />
@@ -40,7 +39,7 @@ if(!drinks) {
       <h3>Category: {drinks.strCategory}</h3>
       <h3>Glass Type: {drinks.strGlass}</h3>
       <ul>
-      <h3>Ingredient List:</h3>
+      <h3 className="heading">Ingredient List:</h3>
       <h3>{drinks.strIngredient1} {drinks.strMeasure1}</h3>
       <h3>{drinks.strIngredient2} {drinks.strMeasure2}</h3>
       <h3>{drinks.strIngredient3} {drinks.strMeasure3}</h3>
@@ -57,13 +56,12 @@ if(!drinks) {
       <h3>{drinks.strIngredient14} {drinks.strMeasure14}</h3>
       <h3>{drinks.strIngredient15} {drinks.strMeasure15}</h3>
       </ul>
-      <h3>Instructions: {drinks.strInstructions}</h3>
+      <h3 className="heading">Instructions: {drinks.strInstructions}</h3>
       </div>
       </div>
-      }
     </div>
     </div>
   )
-}}}
+}}
 
 
