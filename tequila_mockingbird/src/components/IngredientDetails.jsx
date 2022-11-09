@@ -33,7 +33,6 @@ if(!drink) {
       <div key={drink.strIngredient}
       className='ingredientText'>
       <h3>{drink[0].strDescription}</h3>
-      <h3>{drink[0].strABV}</h3>
       </div>
     </div>
     </div>
