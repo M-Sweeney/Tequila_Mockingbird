@@ -133,8 +133,9 @@ Header{
 }
 
 .padding{
-  padding: 1em;
-  padding-bottom: 3em;
+  padding-left: 1in;
+  padding-right: 1in;
+  padding-bottom: 1in;
 }
 
 .detailsImg{
