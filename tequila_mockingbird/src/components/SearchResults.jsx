@@ -11,9 +11,6 @@ export default function SearchResults ({search, setSearch}) {
     navigate(`/drinks/${drink.strDrink}`)
   }
 
-
-
-
 if(!search) {
   return <h2>Loading Results...</h2>
 }else{
