@@ -1,8 +1,3 @@
-
-// use params
-//api call for base url and autofill the remainder with the drink clicked on the previous page
-//pull in the drink clicked from categories and render data
-
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import axios from 'axios'
@@ -16,7 +11,6 @@ export default function Ingredient () {
 useEffect(()=>{
   const getData = async () =>{
   const response = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?i=${id}`)
-  // console.log(response.data.ingredients)
   setdrink(response.data.ingredients)
 
   }

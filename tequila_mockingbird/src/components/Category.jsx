@@ -19,7 +19,6 @@ export default function Categories () {
 useEffect(()=>{
   const getData = async () =>{
   const response = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${id}`)
-  // console.log(response.data.drinks)
   setdrink(response.data.drinks)
 
   }

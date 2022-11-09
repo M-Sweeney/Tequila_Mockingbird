@@ -61,8 +61,6 @@ Header{
   padding-top: 2em;
   padding-bottom: 2em;
   width: 17em;
-  /* height: 18em; */
-  /* max-width: fit-content; */
   max-height: fit-content;
   background-color: #FCDCD1;
   border-radius: 0.5em;
@@ -81,8 +79,6 @@ Header{
 .cardNoImg{
   padding: 1em;
   width: 17em;
-  /* height: 18em; */
-  /* max-width: fit-content; */
   max-height: fit-content;
   background-color: #FCDCD1;
   border-radius: 0.5em;

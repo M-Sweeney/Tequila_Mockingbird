@@ -9,12 +9,7 @@ import MocktailDetails from './MocktailDetails'
 import Categories from "./Categories"
 import Category from "./Category"
 
-
-
-
 export default function Main ({search, setSearch}) {
-
-
 
   return(
     <div className="main">

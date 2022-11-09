@@ -2,14 +2,10 @@ import './App.css'
 import Main from './components/Main'
 import Header from './components/Header'
 import { useState, useEffect } from 'react'
-import axios from 'axios'
-
 
 function App() {
 
-
   const [search, setSearch] = useState(null)
-
 
   return (
     <div>
