@@ -37,7 +37,6 @@ if(!drink) {
       <h3>{drink.strAlcoholic}</h3>
       <h3>Glass Type: {drink.strGlass}</h3>
       <h2 className="heading">Ingredient List</h2>
-      <ul>
       <h3>{drink.strIngredient1} {drink.strMeasure1}</h3>
       <h3>{drink.strIngredient2} {drink.strMeasure2}</h3>
       <h3>{drink.strIngredient3} {drink.strMeasure3}</h3>
@@ -53,7 +52,6 @@ if(!drink) {
       <h3>{drink.strIngredient13} {drink.strMeasure13}</h3>
       <h3>{drink.strIngredient14} {drink.strMeasure14}</h3>
       <h3>{drink.strIngredient15} {drink.strMeasure15}</h3>
-      </ul>
       <h3 className="heading">Instructions</h3>
       <h3>{drink.strInstructions}</h3>
     </div>

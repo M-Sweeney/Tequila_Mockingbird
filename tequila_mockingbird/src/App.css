@@ -115,9 +115,13 @@ Header{
   margin: 0 auto;
   background-color: #FCDCD1;
   box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.527);
-  gap: 2em;
+  gap: 4em;
   min-width: fit-content;
   max-width: 75%;
+}
+
+.detailText{
+  text-align: left;
 }
 
 .container{
@@ -144,9 +148,12 @@ Header{
 
 .ingredientText{
   padding-left: 1em;
-  padding-right: 1em
+  padding-right: 1em;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .heading{
   text-decoration: underline;
-}
+  font-size: 20px;
+  }
