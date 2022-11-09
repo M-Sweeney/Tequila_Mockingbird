@@ -2,6 +2,7 @@ body {
   text-align: center;
   background-color: #f7ebeb;
   font-family: 'Georgia';
+  color: #2F4858;
 }
 
 .main{
@@ -148,4 +149,8 @@ Header{
 .ingredientText{
   padding-left: 1em;
   padding-right: 1em
+}
+
+.heading{
+  text-decoration: underline;
 }
